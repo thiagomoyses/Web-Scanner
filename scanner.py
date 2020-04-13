@@ -13,11 +13,21 @@ print("# Outros Codigo: http://encurtador.com.br/kvRXY #")
 print("#################################################")
 
 site = input('\nURL do site: \n')
-lista = input('caminho da lista: \n')
-paginas = open(lista, 'r')
+
+while True:
+	try:
+		lista = input('caminho da lista: \n')
+		paginas = open(lista, 'r')
+		break
+	except:
+		print("Caminho incorreto!")
 
 for ende in paginas:
-	ende = ende.rstrip()
-	teste = site+ende
-	resultado = requests.get(teste)
-	print(teste, "||", resultado.status_code)
+	try:
+		ende = ende.rstrip()
+		teste = site+ende
+		resultado = requests.get(teste)
+		print(teste, "||", resultado.status_code)
+	except:
+		print("Site nao encontrado!")
+		break
