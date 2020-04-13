@@ -9,7 +9,7 @@ print("# codigo: 200 || Conexao Feita                  #")
 print("# Codigo: 404 || Pagina Não Encontrada          #")
 print("# Codigo: 503 || Serviço indisponível           #")
 print("#                                               #")
-print("# Outros Codigo: http://encurtador.com.br/kvRXY #")
+print("# Outros Codigo: encurtador.com.br/ijXZ5        #")
 print("#################################################")
 
 site = input('\nURL do site: \n')
